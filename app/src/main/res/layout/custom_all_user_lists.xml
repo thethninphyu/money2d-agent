@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <RelativeLayout
+       android:padding="5dp"
+       android:layout_marginTop="5dp"
+       android:layout_width="match_parent"
+       android:id="@+id/relative"
+       android:background="#007799"
+       android:layout_height="wrap_content"
+       >
+      <ImageView
+          android:id="@+id/userPerson"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:layout_centerVertical="true"
+          android:background="@drawable/shape"
+          app:srcCompat="@drawable/ic_person_black_24dp"
+          tools:ignore="VectorDrawableCompat" />
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_toRightOf="@+id/userPerson"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_centerVertical="true"
+          >
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:paddingLeft="8dp"
+             >
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name  : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:id="@+id/user_list_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:textColor="#ffffff"
+                />
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:orientation="horizontal"
+             android:layout_marginTop="10dp"
+             android:paddingLeft="8dp"
+             >
+            <TextView
+                android:id="@+id/points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Points : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:id="@+id/user_list_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="points"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:textColor="#ffffff"
+                />
+         </LinearLayout>
+      </LinearLayout>
+   </RelativeLayout>
+</RelativeLayout>

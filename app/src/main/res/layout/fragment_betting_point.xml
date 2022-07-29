@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#007799"
+    >
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/bettingSwipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bettingrecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/pointshowLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            >
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current points :: "
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#ffff00"
+                />
+            <TextView
+                android:id="@+id/tv_CurrentBetPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="000000"
+                android:textColor="#FFC107"
+                />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edt_generatePoints"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/all_shape"
+            android:ems="10"
+            android:layout_below="@+id/pointshowLayout"
+            android:textColor="#003377"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:padding="5dp"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:layout_marginTop="12dp"
+            />
+        <Button
+            android:id="@+id/btn_generatePoints"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_generatePoints"
+            android:text="generate betting points"
+            android:textColor="#ffffff"
+            android:background="#005599"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="15dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

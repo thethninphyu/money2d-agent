@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/liveSwip"
+    android:layout_height="match_parent"
+    tools:context=".LivePageActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/currentResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textStyle="italic"
+                android:textSize="180sp"
+                android:layout_gravity="center"
+                android:textColor="#009999"
+                />
+            <TextView
+                android:id="@+id/liveUpdateDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:layout_gravity="center"
+                android:textColor="#003399"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/card_shape"
+                    android:layout_gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:id="@+id/Time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="51dp"
+                            android:text="--"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Set"
+                                android:layout_gravity="center"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp"
+                                android:textStyle="italic"
+                                />
+
+                            <TextView
+                                android:id="@+id/DetailSet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="--"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:layout_gravity="center"
+                                android:textColor="#ffffff"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="value"
+                                android:layout_gravity="center"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp"
+                                android:textStyle="italic"
+                                />
+
+                            <TextView
+                                android:id="@+id/DetailValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="--"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:layout_gravity="center"
+                                android:textColor="#ffffff"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="2D"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="italic"
+                                />
+
+                            <TextView
+                                android:id="@+id/Result"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="--"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:layout_gravity="center"
+                                android:textColor="#ffff00"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

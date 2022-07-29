@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/betting_point">
+        <menu>
+            <group
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/liveStream"
+                    android:title="@string/live_stream"/>
+                <item
+                    android:id="@+id/betlist"
+                    android:title="@string/betting_summary"/>
+                <item
+                    android:id="@+id/betting_lists_details"
+                    android:title="@string/betting_details"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/management">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/won_list"
+                    android:title="ေပါက္ဂဏန္းျကည့္ရန္"/>
+                <item
+                    android:id="@+id/change_password"
+                    android:title="စကား၀ွက္ေျပာင္းရန္"/>
+                <item
+                    android:id="@+id/create_user"
+                    android:title="တိုးသားအေကာင္႔လုပ္ရန္"/>
+                <item
+                    android:title="တိုးသားစီမံခန္႔ခဲြရန္္"
+                    android:id="@+id/all_user_list"/>
+                <item
+                    android:id="@+id/unblock_user"
+                    android:title="ဘေလာ႕ျဖည္ထားေသာ"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/reports">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/credit_list"
+                    android:title="@string/credit_list"/>
+
+                <item
+                    android:id="@+id/final_no"
+                    android:title="@string/final_number"/>
+
+            </group>
+        </menu>
+    </item>
+</menu>

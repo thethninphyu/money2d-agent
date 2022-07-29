@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">REAL2D</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="betting_point">ထိုးေသာဂဏန္းမ်ား</string>
+    <string name="live_stream" textSize="20dp">တိုက္ရိုက္ၾကည့္ရန္</string>
+    <string name="betting_summary">ထိုးဂဏန္း အက်ဥ္းခ်ဳပ္</string>
+    <string name="betting_details">ထိုးဂဏန္း အေသးစိတ္မ်ား</string>
+    <string name="management">စီမံခန္႕ခဲြမူ</string>
+    <string name="server_state">ဆာဗာအေျခအေန</string>
+    <string name="post_won_number">ေပါက္ဂဏန္းတင္ရန္</string>
+    <string name="chanege_password">စကား၀ွက္ေျပာင္းရန္</string>
+    <string name="betting_points">ပိြဳင့္တိုးရန္</string>
+    <string name="create_agent">ေအးဂ်င္႔အေကာင္႔လုပ္ရန္</string>
+    <string name="all_agent_list">ေအးဂ်င္႕စီမံခန္႔ခဲြရန္္</string>
+    <string name="unblock_agent">ဘေလာ႕ထားေသာေအးဂ်င္႔မ်ား</string>
+    <string name="reports">မွတ္တမ္းမ်ား</string>
+    <string name="all_user_list">အသံုးျပဳသူအားလံုးၾကည့္ရန္</string>
+    <string name="owner_transfer">ပိြဳင္႕ျဖည္႕မွတ္တမ္း</string>
+    <string name="credit_list">ေအးဂ်င္႔အေႀကြးစာရင္း</string>
+    <string name="balance_sheet">ရွင္းတမ္း</string>
+    <string name="won_list">ေပါက္စာရင္း</string>
+    <string name="final_number">ထြက္ဂဏန္း</string>
+</resources>

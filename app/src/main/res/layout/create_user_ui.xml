@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2476a6">
+
+    <TextView
+        android:id="@+id/tv_agentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create User"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        />
+
+    <LinearLayout
+        android:id="@+id/create_user_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/tv_agentTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        >
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#ffffff"
+            android:textStyle="italic"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/ed_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#1839F1"
+            android:background="@drawable/create_edshape"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:imeOptions="actionNext"
+            android:paddingLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_userPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#ffffff"
+            android:textStyle="italic"
+            android:textSize="16sp"
+
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false"
+            >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/ed_userPass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="#1839f1"
+            android:background="@drawable/create_edshape"
+            android:layout_marginBottom="10dp"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:textSize="18sp"
+            android:paddingLeft="5dp"
+            />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:id="@+id/tv_userPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Points"
+            android:textColor="#ffffff"
+            android:textStyle="italic"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/ed_userPoint"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#1839f1"
+            android:background="@drawable/create_edshape"
+            android:maxLines="1"
+            android:layout_marginBottom="10dp"
+            android:imeOptions="actionNext"
+            android:textSize="18sp"
+            android:paddingLeft="5dp"
+            />
+        <TextView
+            android:id="@+id/tv_userPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textColor="#ffffff"
+            android:textStyle="italic"
+            android:inputType="number"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/ed_userPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#1839f1"
+            android:background="@drawable/create_edshape"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:imeOptions="actionNext"
+            android:paddingLeft="5dp"
+            />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/user_paidCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paid"
+        android:layout_marginTop="15dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_below="@+id/create_user_layout"
+        android:layout_alignLeft="@+id/create_user_layout"
+        />
+
+    <Button
+        android:id="@+id/btn_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create user"
+        android:background="@drawable/ripple_effect"
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/create_user_layout"
+        android:layout_alignRight="@+id/create_user_layout"
+        />
+</RelativeLayout>
